@@ -9,4 +9,3 @@ def index():
         Parent_alias.on(db_connect.Child.father==Parent_alias.id)]
     forms=SQLFORM.grid(query=query,fields=fields,left=left)
     return dict(forms=forms)
-

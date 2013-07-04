@@ -1,4 +1,4 @@
-#Creating database connection with mysql database.
+#Creating database connection with sqlite database.
 db_connect=DAL('mysql://root:root@localhost/test')
 #db_connect=DAL('sqlite://storage.db')
 
@@ -15,4 +15,3 @@ db_connect.define_table('Child',
 #db_connect.Parent.bulk_insert([{'name':'Bob'},{'name':'Alice'},{'name':'Mary'},{'name':'Peter'}])
 #Inserting record in Child table.
 #db_connect.Child.bulk_insert([{'cname':'John','mother':'2','father':'1'},{'cname':'Jane','mother':'3','father':'4'}])
-
