@@ -1,0 +1,8 @@
+{{extend 'layout.html'}}
+<h4 style="color:blue;">
+   Login 
+</h4>
+{{=form}}
+<p align="right">
+    <b style="font-weight:30px;">Instructions:</b>
+</p>

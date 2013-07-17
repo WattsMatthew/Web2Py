@@ -1,0 +1,2 @@
+{{extend 'layout.html'}}
+<h4>Welcome, <strong style="color:blue">{{=session.username}}</strong></h4>
