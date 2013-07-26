@@ -1,0 +1,22 @@
+{{extend 'layout.html'}}
+{{=form}}
+<script>
+    jQuery(document).ready( function(){
+        var flag=0
+        jQuery('.web2py_form').submit(function(){
+            //Getting value from tracker status
+            var get_name=jQuery('#taxpayer_name').val()
+                if(get_name =="") {
+                      if(flag==0) {
+                          //Following are working 
+                        //alert("Please Enter valid Name");
+                        // jQuery("<div class='error'>Please Enter Valid Name</div>").appendTo("#taxpayer_name__label")
+                        //jQuery("<div class='error'>Please Enter Valid Name</div>").appendTo(".w2p_fw")
+                          jQuery("<div class='error'>Please Enter Name</div></div>").appendTo(jQuery("#taxpayer_name").parent());
+                              flag=1
+                            }
+                	return false
+                }
+        });								  
+    });
+</script>
