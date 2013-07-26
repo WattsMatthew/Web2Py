@@ -1,7 +1,0 @@
-{{extend 'layout.html'}}
-<h4>Choose your level</h4>
-{{=form}}
-{{=request.vars}}
-<h6>
-    <strong>Instructions:</strong>
-</h6>

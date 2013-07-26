@@ -1,2 +1,19 @@
-Write something about this app.
 Developed with web2py.
+
+Application: Done Customize validation using jQuery.
+Description:
+	    In general we use requires=IS_NOT_EMPTY() for validation in web2py.
+but what if I want to do customize validation on specific fields. We can do it using jQuery. You've to figure out following files:
+
+Database-/models/db.py
+#This file contains table Creation details.
+
+Controllers-/controllers/default.py
+#This file contains grid creation other details
+#see function taxer()
+
+Validation-/views/default/taxer.html
+#at end of this file, It contains jQuery code for validation
+
+Cheers
+
